@@ -643,6 +643,49 @@
     }
 
 }
+/* VISOR DE FOTOGRAFÍAS */
+
+.gallery-image {
+    cursor: pointer;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 92%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    opacity: 0.7;
+}
 </style>
 </head>
 
@@ -1593,7 +1636,7 @@
     <div class="gallery">
 
         <div class="gallery-item">
-            <img src="galeria/baile.jpeg" alt="Actividad cultural">
+            <img src="galeria/baile.jpeg" alt="Actividad cultural" class="gallery-image" onclick="openLightbox(this)">
             <div class="gallery-caption">
                 <h3>Actividad cultural</h3>
                 <p>Institución Educativa Primavera</p>
@@ -1602,7 +1645,7 @@
 
 
         <div class="gallery-item">
-            <img src="galeria/deporte.jpeg" alt="Actividades deportivas">
+            <img src="galeria/deporte.jpeg" alt="Actividades deportivas" class="gallery-image" onclick="openLightbox(this)">
             <div class="gallery-caption">
                 <h3>Actividades deportivas</h3>
                 <p>Comunidad educativa</p>
@@ -1611,7 +1654,7 @@
 
 
         <div class="gallery-item">
-            <img src="galeria/desfile.jpeg" alt="Desfile institucional">
+            <img src="galeria/desfile.jpeg" alt="Desfile institucional" class="gallery-image" onclick="openLightbox(this)">
             <div class="gallery-caption">
                 <h3>Desfile institucional</h3>
                 <p>Comunidad educativa</p>
@@ -1620,7 +1663,7 @@
 
 
         <div class="gallery-item">
-            <img src="galeria/encuentro.jpeg" alt="Encuentro institucional">
+            <img src="galeria/encuentro.jpeg" alt="Encuentro institucional" class="gallery-image" onclick="openLightbox(this)">
             <div class="gallery-caption">
                 <h3>Encuentro institucional</h3>
                 <p>Institución Educativa Primavera</p>
@@ -1629,7 +1672,7 @@
 
 
         <div class="gallery-item">
-            <img src="galeria/profes.jpeg" alt="Docentes de la institución">
+            <img src="galeria/profes.jpeg" alt="Docentes de la institución" class="gallery-image" onclick="openLightbox(this)">
             <div class="gallery-caption">
                 <h3>Nuestros docentes</h3>
                 <p>Institución Educativa Primavera</p>
@@ -1638,7 +1681,7 @@
 
 
         <div class="gallery-item">
-            <img src="galeria/reunion.jpeg" alt="Reunión institucional">
+            <img src="galeria/reunion.jpeg" alt="Reunión institucional" class="gallery-image" onclick="openLightbox(this)">
             <div class="gallery-caption">
                 <h3>Reuniones institucionales</h3>
                 <p>Comunidad educativa</p>
@@ -1953,5 +1996,39 @@
     </div>
 
 </footer>
+<!-- VISOR DE FOTOGRAFÍAS -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+    <span class="lightbox-close">&times;</span>
+
+    <img id="lightbox-image" src="" alt="Fotografía ampliada">
+
+</div>
+
+
+<script>
+
+function openLightbox(image) {
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+
+    lightbox.classList.add("active");
+
+}
+
+function closeLightbox() {
+
+    const lightbox = document.getElementById("lightbox");
+
+    lightbox.classList.remove("active");
+
+}
+
+</script>
 </body>
 </html>

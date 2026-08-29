@@ -20,6 +20,37 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+/* TOP BAR GOV.CO */
+.govco-topbar{
+    height:56px;
+    width:100%;
+    background:#0943B5;
+    display:flex;
+    align-items:center;
+    padding:0 24px;
+}
+
+.govco-topbar a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-width:44px;
+    min-height:44px;
+    text-decoration:none;
+}
+
+.govco-logo{
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-1px;
+}
+
+.govco-topbar a:focus{
+    outline:2px solid #fff;
+    outline-offset:3px;
+}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;color:#263238;background:#f7f9f8;line-height:1.6}
 header{background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.10)}
@@ -54,6 +85,14 @@ footer{background:#103f28;color:#fff;padding:55px 25px 25px}.footer-grid{max-wid
 
 <body>
 
+<!-- TOP BAR GOV.CO -->
+<div class="govco-topbar">
+    <a href="https://www.gov.co/" target="_blank" rel="noopener"
+       aria-label="Portal Único del Estado Colombiano GOV.CO">
+        <span class="govco-logo">GOV.CO</span>
+    </a>
+</div>
+
 <header>
 <div class="header-container">
 <div class="brand">
@@ -65,6 +104,11 @@ footer{background:#103f28;color:#fff;padding:55px 25px 25px}.footer-grid{max-wid
 </div>
 
 <nav aria-label="Navegación principal">
+
+<a href="#transparencia">Transparencia y Acceso a la Información Pública</a>
+<a href="#atencion">Atención y Servicios a la Ciudadanía</a>
+<a href="#participa">Participa</a>
+
 <a href="index.html">Inicio</a>
 <a href="#institucion">Institución</a>
 <a href="#mision-vision">Misión y Visión</a>

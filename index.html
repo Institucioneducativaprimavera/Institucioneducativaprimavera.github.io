@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,21 +7,40 @@
 
 <title>Institución Educativa Primavera | Pueblo Nuevo, Córdoba</title>
 
-<meta name="description" content="Portal web oficial de la Institución Educativa Primavera de Pueblo Nuevo, Córdoba. Consulta información institucional, académica, documentos, proyectos, actividades, noticias y transparencia.">
+<meta name="description" content="Portal web oficial de la Institución Educativa Primavera de Pueblo Nuevo, Córdoba. Consulta información institucional, académica, documentos, proyectos, actividades, noticias, transparencia y participación ciudadana.">
 <meta name="keywords" content="Institución Educativa Primavera, Pueblo Nuevo Córdoba, colegio Primavera, educación Pueblo Nuevo, institución educativa Córdoba">
 <meta name="author" content="Institución Educativa Primavera">
 <meta name="robots" content="index, follow">
 
 <meta property="og:title" content="Institución Educativa Primavera | Pueblo Nuevo, Córdoba">
-<meta property="og:description" content="Portal web institucional. Información académica, documentos, proyectos, actividades, noticias y transparencia.">
+<meta property="og:description" content="Portal web institucional. Información académica, documentos, proyectos, actividades, noticias, transparencia y participación ciudadana.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://institucioneducativaprimavera.github.io/">
 <meta property="og:image" content="https://institucioneducativaprimavera.github.io/img/colegio.jpeg">
 <meta property="og:locale" content="es_CO">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-/* TOP BAR GOV.CO */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#263238;
+    background:#f7f9f8;
+    line-height:1.6;
+}
+
+/* =========================
+   GOV.CO
+========================= */
+
 .govco-topbar{
     height:56px;
     width:100%;
@@ -51,41 +71,564 @@
     outline:2px solid #fff;
     outline-offset:3px;
 }
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:#263238;background:#f7f9f8;line-height:1.6}
-header{background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.10)}
-.header-container{max-width:1250px;margin:auto;padding:12px 25px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{display:flex;align-items:center;gap:14px}.brand img{width:68px;height:68px;object-fit:contain}
-.brand-text h1{font-size:20px;color:#176b3a;line-height:1.2}.brand-text p{font-size:13px;color:#66756d;margin-top:3px}
-nav{display:flex;align-items:center;gap:5px;flex-wrap:wrap;justify-content:center}
-nav a{color:#263238;text-decoration:none;padding:10px 11px;border-radius:7px;font-size:13px;font-weight:600;transition:.25s}
-nav a:hover{background:#176b3a;color:#fff}
-.hero{min-height:680px;background:linear-gradient(rgba(0,55,30,.58),rgba(0,35,20,.70)),url("img/colegio.jpeg");background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:50px 20px}
-.hero-content{max-width:900px}.hero-content .tag{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);padding:8px 18px;border-radius:30px;font-size:14px;margin-bottom:22px}
-.hero h2{font-size:clamp(40px,6vw,72px);line-height:1.05;margin-bottom:18px;font-weight:800;letter-spacing:-1px;text-shadow:0 3px 14px rgba(0,0,0,.45)}
-.hero p{font-size:clamp(17px,2vw,22px);max-width:750px;margin:auto;color:#f3f7f4}
-.hero-buttons{margin-top:35px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 24px;border-radius:8px;text-decoration:none;font-weight:bold;transition:.25s}
-.btn-primary{background:#d8ad32;color:#17200d}.btn-light{background:#fff;color:#176b3a}.btn:hover{transform:translateY(-2px)}
-.quick-access{max-width:1150px;margin:-55px auto 0;position:relative;z-index:10;display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.12);overflow:hidden}
-.quick-card{padding:28px 18px;text-align:center;text-decoration:none;color:#263238;border-right:1px solid #e8ece9;transition:.25s}.quick-card:last-child{border-right:none}.quick-card:hover{background:#f0f7f3;transform:translateY(-3px)}
-.quick-icon{font-size:30px;margin-bottom:10px}.quick-card h3{color:#176b3a;font-size:16px}.quick-card p{font-size:13px;color:#718078;margin-top:4px}
-section.content{max-width:1150px;margin:auto;padding:90px 25px}
-.section-title{text-align:center;margin-bottom:45px}.section-title span{color:#d8ad32;font-weight:bold;text-transform:uppercase;font-size:13px;letter-spacing:2px}.section-title h2{color:#176b3a;font-size:36px;margin-top:7px}.section-title p{max-width:700px;margin:10px auto 0;color:#68756e}
-.institution-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.institution-text h3{color:#176b3a;font-size:26px;margin-bottom:15px}.institution-text p{color:#56635c;margin-bottom:15px}.institution-box{background:#eaf3ed;border-left:5px solid #176b3a;padding:25px;border-radius:10px}.institution-box strong{color:#176b3a}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.card{background:#fff;padding:30px;border-radius:13px;box-shadow:0 5px 20px rgba(0,0,0,.07);border-top:4px solid #176b3a}.card h3{color:#176b3a;margin-bottom:12px}.card p{color:#66736c;font-size:15px;margin-bottom:10px}.card a{display:inline-block;margin-top:10px;color:#176b3a;font-weight:bold;text-decoration:none}
-.transparency{background:#eef4f0}.transparency .card{border-top-color:#d8ad32}.transparency-note{max-width:850px;margin:0 auto 35px;background:#fff;padding:20px 25px;border-left:5px solid #d8ad32;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.06)}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.gallery-item{position:relative;overflow:hidden;border-radius:18px;background:#fff;box-shadow:0 8px 25px rgba(0,0,0,.12);transition:.3s}.gallery-item:hover{transform:translateY(-6px)}.gallery-item img{width:100%;height:260px;object-fit:cover;display:block;transition:.4s}.gallery-item:hover img{transform:scale(1.05)}.gallery-caption{padding:18px;text-align:center}.gallery-caption h3{margin:0 0 6px}.gallery-caption p{margin:0;opacity:.75}
-footer{background:#103f28;color:#fff;padding:55px 25px 25px}.footer-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:45px}footer h3{margin-bottom:15px}footer p,footer a{color:#d4e1d9;font-size:14px}footer a{display:block;text-decoration:none;margin-bottom:7px}footer a:hover{color:#fff}.copyright{max-width:1150px;margin:40px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);text-align:center;color:#b9c9bf;font-size:13px}
-.lightbox{display:none;position:fixed;z-index:9999;inset:0;background:rgba(0,0,0,.88);align-items:center;justify-content:center;padding:30px}.lightbox.active{display:flex}.lightbox img{max-width:92%;max-height:90vh;object-fit:contain;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.5)}.lightbox-close{position:absolute;top:20px;right:30px;color:#fff;font-size:45px;font-weight:bold;cursor:pointer;line-height:1}
-@media(max-width:900px){.header-container{flex-direction:column}.quick-access{grid-template-columns:repeat(2,1fr);margin:20px}.quick-card:nth-child(2){border-right:none}.institution-grid,.cards,.footer-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.hero{min-height:560px}}
-@media(max-width:600px){.brand-text h1{font-size:17px}.brand img{width:58px;height:58px}nav a{font-size:12px;padding:7px 7px}.hero{min-height:520px}.quick-access{grid-template-columns:1fr}.quick-card{border-right:none;border-bottom:1px solid #e8ece9}.quick-card:last-child{border-bottom:none}section.content{padding-top:65px;padding-bottom:65px}.section-title h2{font-size:29px}.gallery{grid-template-columns:1fr;gap:18px}.gallery-item img{height:240px}}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.10);
+}
+
+.header-container{
+    max-width:1250px;
+    margin:auto;
+    padding:12px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.brand img{
+    width:68px;
+    height:68px;
+    object-fit:contain;
+}
+
+.brand-text h1{
+    font-size:20px;
+    color:#176b3a;
+    line-height:1.2;
+}
+
+.brand-text p{
+    font-size:13px;
+    color:#66756d;
+    margin-top:3px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:#263238;
+    text-decoration:none;
+    padding:10px 11px;
+    border-radius:7px;
+    font-size:13px;
+    font-weight:600;
+    transition:.25s;
+}
+
+nav a:hover{
+    background:#176b3a;
+    color:#fff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:680px;
+    background:
+        linear-gradient(rgba(0,55,30,.58),rgba(0,35,20,.70)),
+        url("img/colegio.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    padding:50px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-content .tag{
+    display:inline-block;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.35);
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    margin-bottom:22px;
+}
+
+.hero h2{
+    font-size:clamp(40px,6vw,72px);
+    line-height:1.05;
+    margin-bottom:18px;
+    font-weight:800;
+    letter-spacing:-1px;
+    text-shadow:0 3px 14px rgba(0,0,0,.45);
+}
+
+.hero p{
+    font-size:clamp(17px,2vw,22px);
+    max-width:750px;
+    margin:auto;
+    color:#f3f7f4;
+}
+
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.btn-primary{
+    background:#d8ad32;
+    color:#17200d;
+}
+
+.btn-light{
+    background:#fff;
+    color:#176b3a;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================
+   QUICK ACCESS
+========================= */
+
+.quick-access{
+    max-width:1150px;
+    margin:-55px auto 0;
+    position:relative;
+    z-index:10;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 8px 30px rgba(0,0,0,.12);
+    overflow:hidden;
+}
+
+.quick-card{
+    padding:28px 18px;
+    text-align:center;
+    text-decoration:none;
+    color:#263238;
+    border-right:1px solid #e8ece9;
+    transition:.25s;
+}
+
+.quick-card:last-child{
+    border-right:none;
+}
+
+.quick-card:hover{
+    background:#f0f7f3;
+    transform:translateY(-3px);
+}
+
+.quick-icon{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.quick-card h3{
+    color:#176b3a;
+    font-size:16px;
+}
+
+.quick-card p{
+    font-size:13px;
+    color:#718078;
+    margin-top:4px;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+section.content{
+    max-width:1150px;
+    margin:auto;
+    padding:90px 25px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title span{
+    color:#d8ad32;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    color:#176b3a;
+    font-size:36px;
+    margin-top:7px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:10px auto 0;
+    color:#68756e;
+}
+
+/* =========================
+   GRID Y TARJETAS
+========================= */
+
+.institution-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.institution-text h3{
+    color:#176b3a;
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.institution-text p{
+    color:#56635c;
+    margin-bottom:15px;
+}
+
+.institution-box{
+    background:#eaf3ed;
+    border-left:5px solid #176b3a;
+    padding:25px;
+    border-radius:10px;
+}
+
+.institution-box strong{
+    color:#176b3a;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:13px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    border-top:4px solid #176b3a;
+}
+
+.card h3{
+    color:#176b3a;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#66736c;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    color:#176b3a;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   TRANSPARENCIA
+========================= */
+
+.transparency{
+    background:#eef4f0;
+}
+
+.transparency .card{
+    border-top-color:#d8ad32;
+}
+
+.transparency-note{
+    max-width:850px;
+    margin:0 auto 35px;
+    background:#fff;
+    padding:20px 25px;
+    border-left:5px solid #d8ad32;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+}
+
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    background:#fff;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-6px);
+}
+
+.gallery-item img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
+
+.gallery-caption{
+    padding:18px;
+    text-align:center;
+}
+
+.gallery-caption h3{
+    margin:0 0 6px;
+}
+
+.gallery-caption p{
+    margin:0;
+    opacity:.75;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#103f28;
+    color:#fff;
+    padding:55px 25px 25px;
+}
+
+.footer-grid{
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:45px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p,
+footer a{
+    color:#d4e1d9;
+    font-size:14px;
+}
+
+footer a{
+    display:block;
+    text-decoration:none;
+    margin-bottom:7px;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.copyright{
+    max-width:1150px;
+    margin:40px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    color:#b9c9bf;
+    font-size:13px;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    inset:0;
+    background:rgba(0,0,0,.88);
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+}
+
+.lightbox.active{
+    display:flex;
+}
+
+.lightbox img{
+    max-width:92%;
+    max-height:90vh;
+    object-fit:contain;
+    border-radius:12px;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+
+.lightbox-close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:#fff;
+    font-size:45px;
+    font-weight:bold;
+    cursor:pointer;
+    line-height:1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .header-container{
+        flex-direction:column;
+    }
+
+    .quick-access{
+        grid-template-columns:repeat(2,1fr);
+        margin:20px;
+    }
+
+    .quick-card:nth-child(2){
+        border-right:none;
+    }
+
+    .institution-grid,
+    .cards,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero{
+        min-height:560px;
+    }
+}
+
+@media(max-width:600px){
+
+    .brand-text h1{
+        font-size:17px;
+    }
+
+    .brand img{
+        width:58px;
+        height:58px;
+    }
+
+    nav a{
+        font-size:12px;
+        padding:7px;
+    }
+
+    .hero{
+        min-height:520px;
+    }
+
+    .quick-access{
+        grid-template-columns:1fr;
+    }
+
+    .quick-card{
+        border-right:none;
+        border-bottom:1px solid #e8ece9;
+    }
+
+    .quick-card:last-child{
+        border-bottom:none;
+    }
+
+    section.content{
+        padding-top:65px;
+        padding-bottom:65px;
+    }
+
+    .section-title h2{
+        font-size:29px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .gallery-item img{
+        height:240px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<!-- TOP BAR GOV.CO -->
+<!-- =========================
+     GOV.CO
+========================= -->
+
 <div class="govco-topbar">
     <a href="https://www.gov.co/" target="_blank" rel="noopener"
        aria-label="Portal Único del Estado Colombiano GOV.CO">
@@ -93,834 +636,1999 @@ footer{background:#103f28;color:#fff;padding:55px 25px 25px}.footer-grid{max-wid
     </a>
 </div>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
 <div class="header-container">
+
 <div class="brand">
-<img src="img/logo.jpg" alt="Escudo Institución Educativa Primavera">
-<div class="brand-text">
-<h1>Institución Educativa Primavera</h1>
-<p>Pueblo Nuevo · Córdoba</p>
-</div>
+    <img src="img/logo.jpg" alt="Escudo Institución Educativa Primavera">
+
+    <div class="brand-text">
+        <h1>Institución Educativa Primavera</h1>
+        <p>Pueblo Nuevo · Córdoba</p>
+    </div>
 </div>
 
 <nav aria-label="Navegación principal">
 
-<a href="#transparencia">Transparencia y Acceso a la Información Pública</a>
-<a href="#atencion">Atención y Servicios a la Ciudadanía</a>
-<a href="#participa">Participa</a>
+<a href="#transparencia">
+    Transparencia
+</a>
 
-<a href="index.html">Inicio</a>
-<a href="#institucion">Institución</a>
-<a href="#mision-vision">Misión y Visión</a>
-<a href="#filosofia">Filosofía</a>
-<a href="#perfiles">Perfiles</a>
-<a href="#academico">Académico</a>
-<a href="#directorio-entidades">Directorio de Entidades</a>
-<a href="#galeria">Galería</a>
-<a href="#documentos">Documentos</a>
-<a href="#noticias">Noticias</a>
-<a href="#contacto">Contacto</a>
+<a href="#atencion">
+    Atención y Servicios
+</a>
+
+<a href="#participa">
+    Participa
+</a>
+
+<a href="index.html">
+    Inicio
+</a>
+
+<a href="#institucion">
+    Institución
+</a>
+
+<a href="#mision-vision">
+    Misión y Visión
+</a>
+
+<a href="#filosofia">
+    Filosofía
+</a>
+
+<a href="#perfiles">
+    Perfiles
+</a>
+
+<a href="#academico">
+    Académico
+</a>
+
+<a href="#directorio-entidades">
+    Directorio
+</a>
+
+<a href="#galeria">
+    Galería
+</a>
+
+<a href="#documentos">
+    Documentos
+</a>
+
+<a href="#noticias">
+    Noticias
+</a>
+
+<a href="#contacto">
+    Contacto
+</a>
+
 </nav>
 </div>
 </header>
 
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
+
 <div class="hero-content">
-<div class="tag">Portal Web Institucional</div>
-<h2>Institución Educativa Primavera</h2>
-<p>Un espacio para nuestra comunidad educativa, donde compartimos nuestra identidad institucional, información académica, documentos, actividades y acceso a información pública.</p>
-<div class="hero-buttons">
-<a href="#institucion" class="btn btn-primary">Conoce nuestra institución</a>
-<a href="#transparencia" class="btn btn-light">Transparencia</a>
+
+<div class="tag">
+    Portal Web Institucional
 </div>
+
+<h2>
+    Institución Educativa Primavera
+</h2>
+
+<p>
+    Un espacio para nuestra comunidad educativa, donde compartimos
+    nuestra identidad institucional, información académica, documentos,
+    actividades, participación y acceso a información pública.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#institucion" class="btn btn-primary">
+    Conoce nuestra institución
+</a>
+
+<a href="#transparencia" class="btn btn-light">
+    Transparencia
+</a>
+
+</div>
+
 </div>
 </section>
+
+<!-- =========================
+     ACCESOS RÁPIDOS
+========================= -->
 
 <div class="quick-access">
-<a href="#documentos" class="quick-card"><div class="quick-icon">📘</div><h3>PEI</h3><p>Proyecto Educativo Institucional</p></a>
-<a href="#documentos" class="quick-card"><div class="quick-icon">📕</div><h3>Manual de Convivencia</h3><p>Normas y acuerdos institucionales</p></a>
-<a href="#transparencia" class="quick-card"><div class="quick-icon">🔎</div><h3>Transparencia</h3><p>Acceso a información pública</p></a>
-<a href="#contacto" class="quick-card"><div class="quick-icon">📍</div><h3>Contacto</h3><p>Información institucional</p></a>
+
+<a href="#documentos" class="quick-card">
+    <div class="quick-icon">📘</div>
+    <h3>PEI</h3>
+    <p>Proyecto Educativo Institucional</p>
+</a>
+
+<a href="#documentos" class="quick-card">
+    <div class="quick-icon">📕</div>
+    <h3>Manual de Convivencia</h3>
+    <p>Normas y acuerdos institucionales</p>
+</a>
+
+<a href="#transparencia" class="quick-card">
+    <div class="quick-icon">🔎</div>
+    <h3>Transparencia</h3>
+    <p>Acceso a información pública</p>
+</a>
+
+<a href="#contacto" class="quick-card">
+    <div class="quick-icon">📍</div>
+    <h3>Contacto</h3>
+    <p>Información institucional</p>
+</a>
+
 </div>
+
+<!-- =========================
+     INSTITUCIÓN
+========================= -->
 
 <section class="content" id="institucion">
-<div class="section-title"><span>Nuestra institución</span><h2>Educación y formación integral</h2><p>Conoce nuestra historia, identidad y horizonte institucional.</p></div>
+
+<div class="section-title">
+    <span>Nuestra institución</span>
+    <h2>Educación y formación integral</h2>
+    <p>
+        Conoce nuestra historia, identidad y horizonte institucional.
+    </p>
+</div>
+
 <div class="institution-grid">
+
 <div class="institution-text">
-<h3>Una institución con historia y compromiso</h3>
-<p>La Institución Educativa Primavera es un establecimiento oficial comprometido con una educación incluyente y de calidad, centrada en la formación integral de sus estudiantes.</p>
-<p>Nuestra institución atiende a las comunidades de Primavera, Los Ángeles, Agua del Oso y comunidades aledañas, ofreciendo educación desde preescolar hasta grado 11.</p>
-<p>Con una historia que se remonta aproximadamente a 1960, la institución ha crecido junto con su comunidad y continúa trabajando por una educación que contribuya al desarrollo académico, humano y social de sus estudiantes.</p>
+
+<h3>
+    Una institución con historia y compromiso
+</h3>
+
+<p>
+    La Institución Educativa Primavera es un establecimiento oficial
+    comprometido con una educación incluyente y de calidad, centrada
+    en la formación integral de sus estudiantes.
+</p>
+
+<p>
+    Nuestra institución atiende a las comunidades de Primavera,
+    Los Ángeles, Agua del Oso y comunidades aledañas, ofreciendo
+    educación desde preescolar hasta grado 11.
+</p>
+
+<p>
+    Con una historia que se remonta aproximadamente a 1960,
+    la institución ha crecido junto con su comunidad y continúa
+    trabajando por una educación que contribuya al desarrollo
+    académico, humano y social de sus estudiantes.
+</p>
+
 </div>
+
 <div class="institution-box">
-<p><strong>Una institución comprometida con su comunidad</strong></p>
-<p>Nuestro sitio web ofrece información institucional organizada y accesible a toda la comunidad educativa.</p>
+
+<p>
+    <strong>
+        Una institución comprometida con su comunidad
+    </strong>
+</p>
+
+<p>
+    Nuestro sitio web ofrece información institucional organizada
+    y accesible a toda la comunidad educativa y a la ciudadanía.
+</p>
+
 </div>
+
 </div>
 </section>
+
+<!-- =========================
+     MISIÓN Y VISIÓN
+========================= -->
 
 <section class="content" id="mision-vision">
-<div class="section-title"><span>Identidad institucional</span><h2>Misión y Visión</h2><p>El horizonte institucional que orienta nuestro trabajo educativo y nuestra formación integral.</p></div>
+
+<div class="section-title">
+    <span>Identidad institucional</span>
+    <h2>Misión y Visión</h2>
+    <p>
+        El horizonte institucional que orienta nuestro trabajo
+        educativo y nuestra formación integral.
+    </p>
+</div>
+
 <div class="cards">
-<div class="card"><h3>🎯 Misión</h3><p>La Institución Educativa Primavera ofrece una educación incluyente y de calidad, centrada en la formación integral de sus estudiantes, en las dimensiones académica, social, ética y humana.</p><p>Promueve la igualdad, el respeto y el desarrollo del conocimiento científico, humanístico, ético y cultural, fortaleciendo la participación ciudadana, el trabajo productivo, el amor por la naturaleza y el respeto por la diversidad.</p></div>
-<div class="card"><h3>🌱 Visión</h3><p>Para el año 2030, la Institución Educativa Primavera será reconocida a nivel regional por ofrecer una educación de calidad, incluyente y con enfoque humanista.</p><p>Formará estudiantes con proyectos de vida exitosos, espíritu emprendedor, valores, responsabilidad social, compromiso ambiental y una sólida formación académica, capaces de contribuir positivamente al desarrollo de su comunidad.</p></div>
+
+<div class="card">
+
+<h3>🎯 Misión</h3>
+
+<p>
+    La Institución Educativa Primavera ofrece una educación incluyente
+    y de calidad, centrada en la formación integral de sus estudiantes,
+    en las dimensiones académica, social, ética y humana.
+</p>
+
+<p>
+    Promueve la igualdad, el respeto y el desarrollo del conocimiento
+    científico, humanístico, ético y cultural, fortaleciendo la
+    participación ciudadana, el trabajo productivo, el amor por la
+    naturaleza y el respeto por la diversidad.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌱 Visión</h3>
+
+<p>
+    Para el año 2030, la Institución Educativa Primavera será reconocida
+    a nivel regional por ofrecer una educación de calidad, incluyente
+    y con enfoque humanista.
+</p>
+
+<p>
+    Formará estudiantes con proyectos de vida exitosos, espíritu
+    emprendedor, valores, responsabilidad social, compromiso ambiental
+    y una sólida formación académica, capaces de contribuir
+    positivamente al desarrollo de su comunidad.
+</p>
+
+</div>
+
 </div>
 </section>
+
+<!-- =========================
+     FILOSOFÍA
+========================= -->
 
 <section class="content" id="filosofia">
-<div class="section-title"><span>Identidad institucional</span><h2>Filosofía, Principios y Valores</h2><p>Los fundamentos que orientan la formación y la convivencia de nuestra comunidad educativa.</p></div>
+
+<div class="section-title">
+    <span>Identidad institucional</span>
+    <h2>Filosofía, Principios y Valores</h2>
+    <p>
+        Los fundamentos que orientan la formación y la convivencia
+        de nuestra comunidad educativa.
+    </p>
+</div>
+
 <div class="cards">
-<div class="card"><h3>🌱 Filosofía institucional</h3><p>La Institución Educativa Primavera fundamenta su accionar en una educación humanista y transformadora, centrada en la formación de personas autónomas, críticas y emprendedoras, capaces de aportar al desarrollo de su comunidad a partir del conocimiento científico, tecnológico y cultural.</p><p>Su filosofía promueve el respeto por la diversidad, la equidad, los valores éticos y el cuidado del medio ambiente, como base para la convivencia y la construcción de una sociedad más justa y solidaria.</p></div>
-<div class="card"><h3>🤝 Principios institucionales</h3><p>La institución orienta su trabajo hacia una formación integral de los estudiantes, fortaleciendo sus competencias cognitivas, ciudadanas y socioemocionales.</p><p>Promueve la conciencia y responsabilidad ambiental, la participación democrática, el sentido de pertenencia, la solidaridad, la cooperación y el respeto.</p></div>
-<div class="card"><h3>❤️ Valores institucionales</h3><p><strong>Solidaridad:</strong> disposición para apoyar a quienes requieren de nuestros buenos sentimientos para salir adelante.</p><p><strong>Amor:</strong> sentimiento que permite comprender, servir, compartir, querer, respetar y convivir.</p><p><strong>Responsabilidad:</strong> compromiso de cumplir con los deberes y asumir las consecuencias de nuestros actos.</p><p><strong>Respeto:</strong> reconocimiento de los derechos y la dignidad de los demás.</p></div>
+
+<div class="card">
+
+<h3>🌱 Filosofía institucional</h3>
+
+<p>
+    La Institución Educativa Primavera fundamenta su accionar en una
+    educación humanista y transformadora, centrada en la formación
+    de personas autónomas, críticas y emprendedoras, capaces de aportar
+    al desarrollo de su comunidad a partir del conocimiento científico,
+    tecnológico y cultural.
+</p>
+
+<p>
+    Su filosofía promueve el respeto por la diversidad, la equidad,
+    los valores éticos y el cuidado del medio ambiente, como base
+    para la convivencia y la construcción de una sociedad más justa
+    y solidaria.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤝 Principios institucionales</h3>
+
+<p>
+    La institución orienta su trabajo hacia una formación integral
+    de los estudiantes, fortaleciendo sus competencias cognitivas,
+    ciudadanas y socioemocionales.
+</p>
+
+<p>
+    Promueve la conciencia y responsabilidad ambiental, la participación
+    democrática, el sentido de pertenencia, la solidaridad,
+    la cooperación y el respeto.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>❤️ Valores institucionales</h3>
+
+<p>
+    <strong>Solidaridad:</strong>
+    disposición para apoyar a quienes requieren de nuestros
+    buenos sentimientos para salir adelante.
+</p>
+
+<p>
+    <strong>Amor:</strong>
+    sentimiento que permite comprender, servir, compartir,
+    querer, respetar y convivir.
+</p>
+
+<p>
+    <strong>Responsabilidad:</strong>
+    compromiso de cumplir con los deberes y asumir las
+    consecuencias de nuestros actos.
+</p>
+
+<p>
+    <strong>Respeto:</strong>
+    reconocimiento de los derechos y la dignidad de los demás.
+</p>
+
+</div>
+
 </div>
 </section>
+
+<!-- =========================
+     PERFILES
+========================= -->
 
 <section class="content" id="perfiles">
-<div class="section-title"><span>Comunidad educativa</span><h2>Perfiles institucionales</h2><p>Características y compromisos que orientan a los integrantes de la comunidad educativa.</p></div>
+
+<div class="section-title">
+    <span>Comunidad educativa</span>
+    <h2>Perfiles institucionales</h2>
+    <p>
+        Características y compromisos que orientan a los integrantes
+        de la comunidad educativa.
+    </p>
+</div>
+
 <div class="cards">
-<div class="card"><h3>🎓 Perfil del estudiante</h3><p>El estudiante se caracteriza por su espíritu de superación y compromiso con la formación continua. Manifiesta respeto por su entorno natural, responsabilidad ambiental y valoración de toda forma de vida.</p></div>
-<div class="card"><h3>👨‍🏫 Perfil del docente</h3><p>El docente cree en sus estudiantes, asume la autoformación permanente, desarrolla la creatividad y la crítica y se compromete en proyectos pedagógicos que dinamicen el crecimiento de la comunidad educativa.</p></div>
-<div class="card"><h3>👩‍💼 Perfil del directivo docente</h3><p>Trabaja responsablemente y con sentido de pertenencia, lidera el establecimiento, promueve el trabajo en equipo y permanece abierto a nuevas opciones y metodologías.</p></div>
-<div class="card"><h3>💼 Perfil del personal administrativo</h3><p>Apoya el servicio educativo desde la organización y administración de los recursos institucionales y contribuye al buen funcionamiento del establecimiento.</p></div>
-<div class="card"><h3>👨‍👩‍👧 Perfil de la familia</h3><p>La familia es educadora, formadora y acompañante del proceso educativo, participa en la vida institucional y mantiene comunicación y diálogo mediante los conductos regulares.</p></div>
+
+<div class="card">
+<h3>🎓 Perfil del estudiante</h3>
+<p>
+    El estudiante se caracteriza por su espíritu de superación
+    y compromiso con la formación continua. Manifiesta respeto
+    por su entorno natural, responsabilidad ambiental y valoración
+    de toda forma de vida.
+</p>
+</div>
+
+<div class="card">
+<h3>👨‍🏫 Perfil del docente</h3>
+<p>
+    El docente cree en sus estudiantes, asume la autoformación
+    permanente, desarrolla la creatividad y la crítica y se
+    compromete en proyectos pedagógicos que dinamicen el crecimiento
+    de la comunidad educativa.
+</p>
+</div>
+
+<div class="card">
+<h3>👩‍💼 Perfil del directivo docente</h3>
+<p>
+    Trabaja responsablemente y con sentido de pertenencia,
+    lidera el establecimiento, promueve el trabajo en equipo
+    y permanece abierto a nuevas opciones y metodologías.
+</p>
+</div>
+
+<div class="card">
+<h3>💼 Perfil del personal administrativo</h3>
+<p>
+    Apoya el servicio educativo desde la organización y administración
+    de los recursos institucionales y contribuye al buen funcionamiento
+    del establecimiento.
+</p>
+</div>
+
+<div class="card">
+<h3>👨‍👩‍👧 Perfil de la familia</h3>
+<p>
+    La familia es educadora, formadora y acompañante del proceso
+    educativo, participa en la vida institucional y mantiene
+    comunicación y diálogo mediante los conductos regulares.
+</p>
+</div>
+
 </div>
 </section>
+
+<!-- =========================
+     ACADÉMICO
+========================= -->
 
 <section class="content" id="academico">
-<div class="section-title"><span>Área académica</span><h2>Formación académica y pedagógica</h2><p>Nuestra propuesta educativa integra la formación académica, el desarrollo integral, el trabajo por proyectos y la participación activa de los estudiantes.</p></div>
-<div class="cards">
-<div class="card"><h3>🧠 Enfoque pedagógico</h3><p>El currículo adopta un enfoque sistémico, que organiza el proceso de enseñanza-aprendizaje sobre bases científicas, tecnológicas, artísticas y humanísticas.</p></div>
-<div class="card"><h3>🔎 Modelo constructivista</h3><p>El modelo pedagógico institucional es constructivista. Promueve un aprendizaje activo, participativo y cooperativo.</p></div>
-<div class="card"><h3>📚 Plan de estudios</h3><p>El plan de estudios articula las áreas y dimensiones correspondientes a los diferentes niveles y grados ofrecidos.</p></div>
-<div class="card"><h3>🌱 Proyectos pedagógicos</h3><p>PRAE, educación para la sexualidad, aprovechamiento del tiempo libre, estilos de vida saludable, democracia escolar y educación y seguridad vial.</p></div>
-<div class="card"><h3>📚 Centros de interés</h3><p>LEO, Primavera Verde, Primavera Literaria y Pinceladas Mágicas fortalecen la formación integral.</p></div>
-<div class="card"><h3>📝 Evaluación</h3><p>El proceso de evaluación es continuo, sistemático e integral.</p><a href="documentos/siee.pdf" target="_blank" rel="noopener">Consultar SIEE →</a></div>
+
+<div class="section-title">
+    <span>Área académica</span>
+    <h2>Formación académica y pedagógica</h2>
+    <p>
+        Nuestra propuesta educativa integra la formación académica,
+        el desarrollo integral, el trabajo por proyectos y la
+        participación activa de los estudiantes.
+    </p>
 </div>
-<div class="section-title" style="margin-top:60px"><span>Plan de estudios</span><h2>Áreas académicas</h2></div>
+
 <div class="cards">
-<div class="card"><h3>📐 Matemáticas</h3><p>Matemáticas, Geometría, Álgebra, Trigonometría y Estadística.</p></div>
-<div class="card"><h3>📖 Humanidades</h3><p>Lengua Castellana e Inglés.</p></div>
-<div class="card"><h3>🌿 Ciencias Naturales</h3><p>Ciencias Naturales y Educación Ambiental, Química y Física.</p></div>
-<div class="card"><h3>🌎 Ciencias Sociales</h3><p>Historia, Geografía, Democracia, Cátedra de la Paz, Ciencias Políticas y Económicas.</p></div>
-<div class="card"><h3>💻 Tecnología</h3><p>Tecnología e Informática.</p></div>
-<div class="card"><h3>🎨 Formación integral</h3><p>Educación Artística, Educación Física, Educación Religiosa, Ética y Valores Humanos y Emprendimiento.</p></div>
-<div class="card"><h3>🧠 Filosofía</h3><p>Área orientada al desarrollo del pensamiento crítico, reflexivo y argumentativo.</p></div>
+
+<div class="card">
+<h3>🧠 Enfoque pedagógico</h3>
+<p>
+    El currículo adopta un enfoque sistémico, que organiza el proceso
+    de enseñanza-aprendizaje sobre bases científicas, tecnológicas,
+    artísticas y humanísticas.
+</p>
+</div>
+
+<div class="card">
+<h3>🔎 Modelo constructivista</h3>
+<p>
+    El modelo pedagógico institucional es constructivista.
+    Promueve un aprendizaje activo, participativo y cooperativo.
+</p>
+</div>
+
+<div class="card">
+<h3>📚 Plan de estudios</h3>
+<p>
+    El plan de estudios articula las áreas y dimensiones correspondientes
+    a los diferentes niveles y grados ofrecidos.
+</p>
+</div>
+
+<div class="card">
+<h3>🌱 Proyectos pedagógicos</h3>
+<p>
+    PRAE, educación para la sexualidad, aprovechamiento del tiempo libre,
+    estilos de vida saludable, democracia escolar y educación y
+    seguridad vial.
+</p>
+</div>
+
+<div class="card">
+<h3>📚 Centros de interés</h3>
+<p>
+    LEO, Primavera Verde, Primavera Literaria y Pinceladas Mágicas
+    fortalecen la formación integral.
+</p>
+</div>
+
+<div class="card">
+<h3>📝 Evaluación</h3>
+<p>
+    El proceso de evaluación es continuo, sistemático e integral.
+</p>
+
+<a href="documentos/siee.pdf" target="_blank" rel="noopener">
+    Consultar SIEE →
+</a>
+
+</div>
+
+</div>
+
+<div class="section-title" style="margin-top:60px">
+
+<span>Plan de estudios</span>
+<h2>Áreas académicas</h2>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>📐 Matemáticas</h3>
+<p>
+    Matemáticas, Geometría, Álgebra, Trigonometría y Estadística.
+</p>
+</div>
+
+<div class="card">
+<h3>📖 Humanidades</h3>
+<p>
+    Lengua Castellana e Inglés.
+</p>
+</div>
+
+<div class="card">
+<h3>🌿 Ciencias Naturales</h3>
+<p>
+    Ciencias Naturales y Educación Ambiental, Química y Física.
+</p>
+</div>
+
+<div class="card">
+<h3>🌎 Ciencias Sociales</h3>
+<p>
+    Historia, Geografía, Democracia, Cátedra de la Paz,
+    Ciencias Políticas y Económicas.
+</p>
+</div>
+
+<div class="card">
+<h3>💻 Tecnología</h3>
+<p>
+    Tecnología e Informática.
+</p>
+</div>
+
+<div class="card">
+<h3>🎨 Formación integral</h3>
+<p>
+    Educación Artística, Educación Física, Educación Religiosa,
+    Ética y Valores Humanos y Emprendimiento.
+</p>
+</div>
+
+<div class="card">
+<h3>🧠 Filosofía</h3>
+<p>
+    Área orientada al desarrollo del pensamiento crítico,
+    reflexivo y argumentativo.
+</p>
+</div>
+
 </div>
 </section>
+
+<!-- =========================
+     DOCUMENTOS INSTITUCIONALES
+========================= -->
 
 <section class="content" id="documentos">
-<div class="section-title"><span>Biblioteca digital</span><h2>Documentos institucionales</h2><p>Acceso a los documentos oficiales de la Institución Educativa Primavera.</p></div>
+
+<div class="section-title">
+
+<span>Biblioteca digital</span>
+
+<h2>Documentos institucionales</h2>
+
+<p>
+    Acceso a documentos oficiales de la Institución Educativa Primavera.
+</p>
+
+</div>
+
 <div class="cards">
-<div class="card"><h3>📘 Proyecto Educativo Institucional</h3><p>Consulta el Proyecto Educativo Institucional.</p><a href="documentos/pei.pdf" target="_blank" rel="noopener">Consultar PEI →</a></div>
-<div class="card"><h3>📕 Manual de Convivencia</h3><p>Consulta las normas, derechos, deberes y acuerdos que orientan la convivencia.</p><a href="documentos/manual-convivencia.pdf" target="_blank" rel="noopener">Consultar Manual →</a></div>
-<div class="card"><h3>📄 Sistema Institucional de Evaluación</h3><p>Consulta el Sistema Institucional de Evaluación de los estudiantes.</p><a href="documentos/siee.pdf" target="_blank" rel="noopener">Consultar SIEE →</a></div>
-<div class="card"><h3>📅 Cronograma de actividades</h3><p>Consulte el cronograma institucional de actividades de la Institución Educativa Primavera.</p><a href="documentos/cronograma.pdf" target="_blank" rel="noopener">Consultar cronograma →</a></div>
+
+<div class="card">
+<h3>📘 Proyecto Educativo Institucional</h3>
+<p>
+    Consulta el Proyecto Educativo Institucional.
+</p>
+<a href="documentos/pei.pdf" target="_blank" rel="noopener">
+    Consultar PEI →
+</a>
+</div>
+
+<div class="card">
+<h3>📕 Manual de Convivencia</h3>
+<p>
+    Consulta las normas, derechos, deberes y acuerdos que orientan
+    la convivencia institucional.
+</p>
+<a href="documentos/manual-convivencia.pdf" target="_blank" rel="noopener">
+    Consultar Manual →
+</a>
+</div>
+
+<div class="card">
+<h3>📄 Sistema Institucional de Evaluación</h3>
+<p>
+    Consulta el Sistema Institucional de Evaluación de los Estudiantes.
+</p>
+<a href="documentos/siee.pdf" target="_blank" rel="noopener">
+    Consultar SIEE →
+</a>
+</div>
+
+<div class="card">
+<h3>📅 Cronograma de actividades</h3>
+<p>
+    Consulte el cronograma institucional de actividades.
+</p>
+<a href="documentos/cronograma.pdf" target="_blank" rel="noopener">
+    Consultar cronograma →
+</a>
+</div>
 
 </div>
 </section>
 
-<!-- TRANSPARENCIA -->
+<!-- =========================
+     TRANSPARENCIA
+========================= -->
+
 <section class="content transparency" id="transparencia">
+
 <div class="section-title">
+
 <span>Acceso a la información pública</span>
-<h2>Transparencia y Acceso a la Información Pública</h2>
-<p>Sección institucional destinada a facilitar el acceso a la información pública y a los sistemas oficiales relacionados con la gestión de la institución.</p>
+
+<h2>
+    Transparencia y Acceso a la Información Pública
+</h2>
+
+<p>
+    Sección institucional destinada a facilitar el acceso a la
+    información pública y a los sistemas oficiales relacionados
+    con la gestión de la institución.
+</p>
+
 </div>
 
 <div class="transparency-note">
-<strong>Información pública:</strong> cuando la información institucional se encuentra publicada en otro apartado de este sitio o en un sistema oficial del Estado, este portal facilita su consulta mediante el enlace correspondiente.
+
+<strong>Información pública:</strong>
+
+cuando la información institucional se encuentra publicada en otro
+apartado de este sitio o en un sistema oficial del Estado, este
+portal facilita su consulta mediante el enlace correspondiente.
+
 </div>
 
 <div class="cards">
+
+<!-- INFORMACIÓN INSTITUCIONAL -->
+
 <div class="card">
 <h3>🏫 Información institucional</h3>
-<p>Información general, identidad institucional, misión, visión, perfiles, contacto y horario de atención.</p>
-<a href="#institucion">Consultar información →</a>
+<p>
+    Información general, identidad institucional, misión, visión,
+    perfiles, contacto y horario de atención.
+</p>
+<a href="#institucion">
+    Consultar información →
+</a>
 </div>
+
+<!-- DOCUMENTOS -->
 
 <div class="card">
 <h3>📚 Documentos institucionales</h3>
-<p>Consulta el PEI, Manual de Convivencia y Sistema Institucional de Evaluación.</p>
-<a href="#documentos">Consultar documentos →</a>
+<p>
+    Consulta el PEI, Manual de Convivencia, SIEE y Cronograma.
+</p>
+<a href="#documentos">
+    Consultar documentos →
+</a>
 </div>
 
+<!-- PAAC -->
+
 <div class="card">
-<h3>⚖️ Normativa y marco legal</h3>
-<p>Consulta la normativa oficial relacionada con transparencia y acceso a la información pública.</p>
-<a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=56882" target="_blank" rel="noopener">Ley 1712 de 2014 →</a>
+<h3>📋 Plan Anticorrupción y de Atención al Ciudadano</h3>
+<p>
+    Consulta el documento correspondiente al Plan Anticorrupción
+    y de Atención al Ciudadano para la vigencia 2026.
+</p>
+<a href="documentos/paac-2026.pdf" target="_blank" rel="noopener">
+    Consultar PAAC 2026 →
+</a>
 </div>
+
+<!-- RENDICIÓN -->
+
+<div class="card">
+<h3>📊 Rendición de Cuentas</h3>
+<p>
+    Consulta el informe de Rendición de Cuentas correspondiente
+    a la vigencia 2025.
+</p>
+<a href="documentos/rendicion-cuentas-2025.pdf"
+   target="_blank"
+   rel="noopener">
+    Consultar Rendición de Cuentas 2025 →
+</a>
+</div>
+
+<!-- CONTRATACIÓN -->
 
 <div class="card">
 <h3>💰 Contratación pública – SECOP</h3>
-<p>Consulta los procesos y la gestión contractual publicada en el Sistema Electrónico para la Contratación Pública.</p>
-<a href="https://www.colombiacompra.gov.co/secop" target="_blank" rel="noopener">Consultar SECOP →</a>
+<p>
+    Consulta los procesos y la gestión contractual publicada
+    en el Sistema Electrónico para la Contratación Pública.
+</p>
+<a href="https://www.colombiacompra.gov.co/secop"
+   target="_blank"
+   rel="noopener">
+    Consultar SECOP →
+</a>
 </div>
+
+<!-- PLANEACIÓN -->
 
 <div class="card">
 <h3>📊 Planeación, presupuesto e informes</h3>
-<p>Acceso a la información de planeación, presupuesto, ejecución e informes que corresponda consultar en las fuentes oficiales.</p>
-<a href="https://www.funcionpublica.gov.co/" target="_blank" rel="noopener">Consultar Función Pública →</a>
+<p>
+    Acceso a información de planeación, presupuesto, ejecución
+    e informes que corresponda consultar en las fuentes oficiales.
+</p>
+<a href="https://www.funcionpublica.gov.co/"
+   target="_blank"
+   rel="noopener">
+    Consultar Función Pública →
+</a>
 </div>
 
-<div class="card">
-<h3>👥 Participación y atención ciudadana</h3>
-<p>Canales para solicitudes de información, participación ciudadana y atención a la comunidad.</p>
-<a href="#contacto">Ver canales institucionales →</a>
-</div>
+<!-- DIRECTORIO -->
 
 <div class="card">
 <h3>👨‍💼 Directorio y servidores públicos</h3>
-<p>Consulta la información institucional y los directorios disponibles en los sistemas oficiales del Estado.</p>
-<a href="https://www.funcionpublica.gov.co/web/sigep2/directorio" target="_blank" rel="noopener">Consultar SIGEP →</a>
+<p>
+    Consulta la información institucional y los directorios
+    disponibles en los sistemas oficiales del Estado.
+</p>
+<a href="https://www.funcionpublica.gov.co/web/sigep2/directorio"
+   target="_blank"
+   rel="noopener">
+    Consultar SIGEP →
+</a>
 </div>
+
+<!-- GESTIÓN DOCUMENTAL -->
 
 <div class="card">
 <h3>📋 Gestión documental y transparencia</h3>
-<p>Espacio destinado a facilitar el acceso a los instrumentos de gestión de información que correspondan a la institución o a la entidad responsable.</p>
-<a href="https://www.archivogeneral.gov.co/" target="_blank" rel="noopener">Consultar Archivo General →</a>
+<p>
+    Espacio destinado a facilitar el acceso a los instrumentos
+    de gestión de información que correspondan a la institución
+    o a la entidad responsable.
+</p>
+<a href="https://www.archivogeneral.gov.co/"
+   target="_blank"
+   rel="noopener">
+    Consultar Archivo General →
+</a>
 </div>
+
+<!-- NORMATIVA -->
 
 <div class="card">
-<h3>🔗 Sistemas oficiales</h3>
-<p>Acceso a sistemas estatales utilizados para la publicación y consulta de información pública.</p>
-<a href="https://www.funcionpublica.gov.co/" target="_blank" rel="noopener">Consultar sistemas oficiales →</a>
+<h3>⚖️ Normativa y marco legal</h3>
+<p>
+    Consulta la normativa oficial relacionada con transparencia
+    y acceso a la información pública.
+</p>
+<a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=56882"
+   target="_blank"
+   rel="noopener">
+    Ley 1712 de 2014 →
+</a>
 </div>
+
 </div>
-</section>
-</div>
-</section>
 
-</section>
+<!-- =========================
+     PARTICIPACIÓN Y GOBIERNO
+========================= -->
 
-<!-- ATENCIÓN Y SERVICIOS A LA CIUDADANÍA -->
+<div class="section-title" style="margin-top:70px">
 
-<section class="content" id="atencion">
+<span>Participación y gobierno escolar</span>
 
-```
-<div class="section-title">
-    <span>Atención a la ciudadanía</span>
-    <h2>Atención y Servicios a la Ciudadanía</h2>
-    <p>
-        Información sobre los canales de atención y los servicios
-        disponibles para la comunidad educativa y la ciudadanía.
-    </p>
+<h2>
+    Documentos de participación institucional
+</h2>
+
+<p>
+    Actas y documentos relacionados con las diferentes instancias
+    de participación de la comunidad educativa.
+</p>
+
 </div>
 
 <div class="cards">
 
-    <div class="card">
-        <h3>📞 Atención telefónica</h3>
-        <p>
-            La comunidad puede comunicarse con la Institución Educativa
-            Primavera a través del teléfono institucional.
-        </p>
-        <a href="tel:+573116642533">
-            Llamar a la institución →
-        </a>
-    </div>
-
-    <div class="card">
-        <h3>✉️ Atención por correo electrónico</h3>
-        <p>
-            Para consultas, solicitudes de información y comunicaciones
-            institucionales puede utilizarse el correo institucional.
-        </p>
-        <a href="mailto:ee_22357000093301@sedcordoba.gov.co">
-            Enviar correo →
-        </a>
-    </div>
-
-    <div class="card">
-        <h3>📍 Atención presencial</h3>
-        <p>
-            La atención presencial se realiza en la Institución Educativa
-            Primavera, ubicada en la vereda Primavera, Pueblo Nuevo,
-            Córdoba.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>🕐 Horario de atención</h3>
-        <p>
-            <strong>Lunes a viernes</strong><br>
-            7:00 a. m. – 2:30 p. m.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>📄 Solicitud de información</h3>
-        <p>
-            La ciudadanía puede solicitar información pública a través
-            de los canales institucionales disponibles.
-        </p>
-        <a href="#contacto">
-            Ver canales de contacto →
-        </a>
-    </div>
-
-    <div class="card">
-        <h3>🏫 Servicios educativos</h3>
-        <p>
-            Información relacionada con los procesos académicos,
-            institucionales y de formación ofrecidos por el
-            establecimiento educativo.
-        </p>
-        <a href="#academico">
-            Consultar información académica →
-        </a>
-    </div>
-
-</div>
-
-<!-- INFORMACIÓN DE ATENCIÓN AL CIUDADANO -->
-
-<div class="transparency-note">
-    <h3>Información para la atención a la ciudadanía</h3>
-    <p>
-        La Institución Educativa Primavera dispone de canales de atención
-        para recibir solicitudes, consultas, inquietudes y requerimientos
-        relacionados con los servicios institucionales.
-    </p>
+<div class="card">
+<h3>🏛️ Consejo Directivo</h3>
+<p>
+    Acta correspondiente al Consejo Directivo de la institución.
+</p>
+<a href="documentos/acta-consejo-directivo.pdf"
+   target="_blank"
+   rel="noopener">
+    Consultar Acta del Consejo Directivo →
+</a>
 </div>
 
 <div class="card">
-    <h3>📚 Normatividad y documentos institucionales</h3>
-    <p>
-        Consulte las disposiciones y documentos institucionales que
-        orientan el funcionamiento de la Institución Educativa Primavera,
-        la convivencia escolar y la prestación del servicio educativo.
-    </p>
+<h3>📜 Reglamento del Consejo Directivo</h3>
+<p>
+    Documento que establece las orientaciones y funcionamiento
+    del Consejo Directivo.
+</p>
+<a href="documentos/reglamento-consejo-directivo.pdf"
+   target="_blank"
+   rel="noopener">
+    Consultar Reglamento →
+</a>
+</div>
 
+<div class="card">
+<h3>🎓 Consejo Académico</h3>
+<p>
+    Acta correspondiente al Consejo Académico institucional.
+</p>
+<a href="documentos/acta-consejo-academico.pdf"
+   target="_blank"
+   rel="noopener">
+    Consultar Acta del Consejo Académico →
+</a>
+</div>
 
-<ul style="text-align:left; margin:15px 0; padding-left:20px;">
+<div class="card">
+<h3>🧑‍🎓 Consejo Estudiantil</h3>
+<p>
+    Acta correspondiente al Consejo Estudiantil.
+</p>
+<a href="documentos/acta-consejo-estudiantil.pdf"
+   target="_blank"
+   rel="noopener">
+    Consultar Acta del Consejo Estudiantil →
+</a>
+</div>
+
+<div class="card">
+<h3>🗳️ Personero Estudiantil</h3>
+<p>
+    Acta correspondiente al proceso del Personero Estudiantil.
+</p>
+<a href="documentos/acta-personero-estudiantil.pdf"
+   target="_blank"
+   rel="noopener">
+    Consultar Acta del Personero Estudiantil →
+</a>
+</div>
+
+<div class="card">
+<h3>🤝 Comité Escolar de Convivencia</h3>
+<p>
+    Acta correspondiente al Comité Escolar de Convivencia.
+</p>
+<a href="documentos/acta-comite-convivencia.pdf"
+   target="_blank"
+   rel="noopener">
+    Consultar Acta del Comité de Convivencia →
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     ATENCIÓN Y SERVICIOS
+========================= -->
+
+<section class="content" id="atencion">
+
+<div class="section-title">
+
+<span>Atención a la ciudadanía</span>
+
+<h2>
+    Atención y Servicios a la Ciudadanía
+</h2>
+
+<p>
+    Información sobre los canales de atención y los servicios
+    disponibles para la comunidad educativa y la ciudadanía.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>📞 Atención telefónica</h3>
+<p>
+    La comunidad puede comunicarse con la Institución Educativa
+    Primavera a través del teléfono institucional.
+</p>
+<a href="tel:+573116642533">
+    Llamar a la institución →
+</a>
+</div>
+
+<div class="card">
+<h3>✉️ Atención por correo electrónico</h3>
+<p>
+    Para consultas, solicitudes de información y comunicaciones
+    institucionales puede utilizarse el correo institucional.
+</p>
+<a href="mailto:ee_22357000093301@sedcordoba.gov.co">
+    Enviar correo →
+</a>
+</div>
+
+<div class="card">
+<h3>📍 Atención presencial</h3>
+<p>
+    La atención presencial se realiza en la Institución Educativa
+    Primavera, ubicada en la vereda Primavera, Pueblo Nuevo, Córdoba.
+</p>
+</div>
+
+<div class="card">
+<h3>🕐 Horario de atención</h3>
+<p>
+    <strong>
+        Lunes a viernes
+    </strong>
+    <br>
+    7:00 a. m. – 2:30 p. m.
+</p>
+</div>
+
+<div class="card">
+<h3>📄 Solicitud de información</h3>
+<p>
+    La ciudadanía puede solicitar información pública a través
+    de los canales institucionales disponibles.
+</p>
+<a href="#contacto">
+    Ver canales de contacto →
+</a>
+</div>
+
+<div class="card">
+<h3>🏫 Servicios educativos</h3>
+<p>
+    Información relacionada con los procesos académicos,
+    institucionales y de formación ofrecidos por el establecimiento.
+</p>
+<a href="#academico">
+    Consultar información académica →
+</a>
+</div>
+
+</div>
+
+<div class="transparency-note">
+
+<h3>
+    Información para la atención a la ciudadanía
+</h3>
+
+<p>
+    La Institución Educativa Primavera dispone de canales de atención
+    para recibir solicitudes, consultas, inquietudes y requerimientos
+    relacionados con los servicios institucionales.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📚 Normatividad y documentos institucionales</h3>
+
+<p>
+    Consulte las disposiciones y documentos institucionales que
+    orientan el funcionamiento de la Institución Educativa Primavera,
+    la convivencia escolar y la prestación del servicio educativo.
+</p>
+
+<ul style="text-align:left;margin:15px 0;padding-left:20px;">
     <li>Proyecto Educativo Institucional (PEI)</li>
     <li>Manual de Convivencia</li>
-    <li>Sistema Institucional de Evaluación de los Estudiantes (SIEE)</li>
+    <li>Sistema Institucional de Evaluación (SIEE)</li>
 </ul>
 
 <a href="#documentos">
     Consultar documentos →
 </a>
 
+</div>
+
+<div class="card">
+
+<h3>📝 Formularios y solicitudes</h3>
+
+<p>
+    La ciudadanía puede presentar solicitudes de información,
+    consultas y requerimientos a través de los canales de atención
+    institucional disponibles.
+</p>
+
+<a href="mailto:ee_22357000093301@sedcordoba.gov.co">
+    Presentar solicitud por correo →
+</a>
 
 </div>
 
+<div class="card">
 
-    <div class="card">
-        <h3>📝 Formularios y solicitudes</h3>
-        <p>
-            La ciudadanía puede presentar solicitudes de información,
-            consultas y requerimientos a través de los canales de atención
-            institucional disponibles.
-        </p>
-        <a href="mailto:ee_22357000093301@sedcordoba.gov.co">
-            Presentar solicitud por correo →
-        </a>
-    </div>
+<h3>📋 Protocolo de atención</h3>
 
-    <div class="card">
-        <h3>📋 Protocolo de atención</h3>
-        <p>
-            La atención a la ciudadanía se desarrolla bajo criterios de
-            respeto, oportunidad, claridad, transparencia y trato digno.
-        </p>
-        <a href="#contacto">
-            Consultar canales de atención →
-        </a>
-    </div>
+<p>
+    La atención a la ciudadanía se desarrolla bajo criterios de
+    respeto, oportunidad, claridad, transparencia y trato digno.
+</p>
+
+<a href="#contacto">
+    Consultar canales de atención →
+</a>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- PARTICIPA -->
+<!-- =========================
+     PARTICIPA
+========================= -->
 
 <section class="content" id="participa">
 
-```
 <div class="section-title">
-    <span>Participación ciudadana</span>
-    <h2>Participa</h2>
-    <p>
-        Espacio destinado a facilitar la participación de la comunidad
-        educativa y de la ciudadanía en los asuntos institucionales.
-    </p>
+
+<span>Participación ciudadana</span>
+
+<h2>Participa</h2>
+
+<p>
+    Espacio destinado a facilitar la participación de la comunidad
+    educativa y de la ciudadanía en los asuntos institucionales.
+</p>
+
 </div>
 
 <div class="cards">
 
-    <div class="card">
-        <h3>🤝 Participación de la comunidad educativa</h3>
-        <p>
-            La comunidad educativa puede participar en los diferentes
-            espacios institucionales establecidos para estudiantes,
-            familias, docentes y demás integrantes de la institución.
-        </p>
-    </div>
+<div class="card">
 
-    <div class="card">
-        <h3>🗳️ Gobierno escolar</h3>
-        <p>
-            Espacio de participación de los diferentes integrantes de
-            la comunidad educativa de acuerdo con las normas y
-            mecanismos establecidos para el gobierno escolar.
-        </p>
-    </div>
+<h3>🤝 Participación de la comunidad educativa</h3>
 
-    <div class="card">
-        <h3>💬 Atención y solicitudes</h3>
-        <p>
-            La ciudadanía puede presentar solicitudes, inquietudes o
-            requerimientos mediante los canales institucionales de
-            atención.
-        </p>
-        <a href="#contacto">
-            Consultar canales de atención →
-        </a>
-    </div>
+<p>
+    La comunidad educativa participa en los diferentes espacios
+    institucionales establecidos para estudiantes, familias,
+    docentes, directivos y demás integrantes de la institución.
+</p>
 
-    <div class="card">
-        <h3>📢 Información y convocatorias</h3>
-        <p>
-            En este espacio se publicarán las actividades, convocatorias
-            y oportunidades de participación que correspondan.
-        </p>
-        <p><strong>Próximamente</strong></p>
-    </div>
+<p>
+    Estos espacios permiten la participación, representación,
+    deliberación y toma de decisiones en los asuntos propios
+    de la vida institucional.
+</p>
 
 </div>
-```
+
+<div class="card">
+
+<h3>🗳️ Gobierno escolar</h3>
+
+<p>
+    La Institución Educativa Primavera promueve la participación
+    de los diferentes estamentos de la comunidad educativa a
+    través de las instancias que conforman el Gobierno Escolar.
+</p>
+
+<p>
+    Entre estas instancias se encuentran el Consejo Directivo,
+    Consejo Académico y las formas de representación estudiantil.
+</p>
+
+<a href="documentos/reglamento-consejo-directivo.pdf"
+target="_blank"
+rel="noopener">
+Consultar Reglamento del Consejo Directivo → </a>
+
+</div>
+
+<div class="card">
+
+<h3>📋 Actas de participación</h3>
+
+<p>
+    Documentos que evidencian la participación de los diferentes
+    órganos y representantes de la comunidad educativa.
+</p>
+
+<a href="documentos/acta-consejo-directivo.pdf"
+target="_blank"
+rel="noopener">
+Acta Consejo Directivo → </a>
+
+<a href="documentos/acta-consejo-academico.pdf"
+target="_blank"
+rel="noopener">
+Acta Consejo Académico → </a>
+
+<a href="documentos/acta-consejo-estudiantil.pdf"
+target="_blank"
+rel="noopener">
+Acta Consejo Estudiantil → </a>
+
+<a href="documentos/acta-personero-estudiantil.pdf"
+target="_blank"
+rel="noopener">
+Acta Personero Estudiantil → </a>
+
+<a href="documentos/acta-comite-convivencia.pdf"
+target="_blank"
+rel="noopener">
+Acta Comité de Convivencia → </a>
+
+</div>
+
+<div class="card">
+
+<h3>📢 Información y convocatorias</h3>
+
+<p>
+    En este espacio se publicarán las actividades, convocatorias,
+    reuniones y oportunidades de participación dirigidas a la
+    comunidad educativa.
+</p>
+
+<p>
+    <strong>Información institucional disponible próximamente.</strong>
+</p>
+
+<a href="#contacto">
+    Consultar canales de atención →
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- DIRECTORIO DE ENTIDADES -->
+
+<!-- =========================
+     DIRECTORIO
+========================= -->
 
 <section class="content" id="directorio-entidades">
 
-```
 <div class="section-title">
-    <span>Entidades relacionadas</span>
-    <h2>Directorio de Entidades</h2>
-    <p>
-        Entidades del sector público relacionadas con la Institución
-        Educativa Primavera y con la prestación del servicio educativo.
-    </p>
+
+<span>Entidades relacionadas</span>
+
+<h2>Directorio de Entidades</h2>
+
+<p>
+    Entidades del sector público relacionadas con la Institución
+    Educativa Primavera y con la prestación del servicio educativo.
+</p>
+
 </div>
 
 <div class="cards">
 
-    <div class="card">
-        <h3>🏛️ Ministerio de Educación Nacional</h3>
-        <p>
-            Entidad del Gobierno Nacional responsable de formular y
-            orientar la política educativa del país.
-        </p>
-        <a href="https://www.mineducacion.gov.co/" target="_blank" rel="noopener">
-            Visitar sitio web →
-        </a>
-    </div>
+<div class="card">
 
-    <div class="card">
-    <h3>🏛️ Secretaría de Educación de Córdoba</h3>
+<h3>🏛️ Ministerio de Educación Nacional</h3>
 
-    <p>
-        <strong>Nombre de la entidad:</strong><br>
-        Secretaría de Educación de la Gobernación de Córdoba
-    </p>
+<p>
+    Entidad del Gobierno Nacional responsable de formular y orientar
+    la política educativa del país.
+</p>
 
-    <p>
-        <strong>Dirección:</strong><br>
-        Palacio de Naín – Calle 27 N.° 3-28, Montería, Córdoba
-    </p>
-
-    <p>
-        <strong>Teléfono:</strong><br>
-        784 8940 – Línea gratuita 018000 400357
-    </p>
-
-    <p>
-        <strong>E-mail:</strong><br>
-        contactenos@cordoba.gov.co
-    </p>
-
-    <p>
-        <strong>Tipo de control:</strong><br>
-        Administrativo, regulatorio, inspección y vigilancia del servicio educativo.
-    </p>
-
-    <p>
-        <strong>Mecanismos de supervisión y vigilancia:</strong><br>
-        La Secretaría de Educación, a través de sus funciones de inspección y
-        vigilancia, realiza seguimiento, verificación, asesoría y control sobre
-        la prestación del servicio educativo.
-    </p>
-
-    <p>
-        <strong>Mecanismos internos de la institución:</strong><br>
-        Rectoría o Dirección Rural, Consejo Directivo, Consejo Académico,
-        Comité Escolar de Convivencia y demás instancias establecidas en el
-        PEI y el Manual de Convivencia.
-    </p>
-
-    <a href="https://seducacion.cordoba.gov.co/index.php/es/"
-       target="_blank"
-       rel="noopener">
-        Visitar sitio web de la Secretaría →
-    </a>
-</div>
-
-    <div class="card">
-        <h3>🏛️ Gobernación de Córdoba</h3>
-        <p>
-            Entidad territorial departamental a la cual se encuentra
-            vinculada la gestión del sector educativo departamental.
-        </p>
-        <a href="https://www.cordoba.gov.co/" target="_blank" rel="noopener">
-            Visitar sitio web →
-        </a>
-    </div>
+<a href="https://www.mineducacion.gov.co/"
+   target="_blank"
+   rel="noopener">
+    Visitar sitio web →
+</a>
 
 </div>
-```
+
+<div class="card">
+
+<h3>🏛️ Secretaría de Educación de Córdoba</h3>
+
+<p>
+    <strong>Nombre de la entidad:</strong><br>
+    Secretaría de Educación de la Gobernación de Córdoba
+</p>
+
+<p>
+    <strong>Dirección:</strong><br>
+    Palacio de Naín – Calle 27 N.° 3-28, Montería, Córdoba
+</p>
+
+<p>
+    <strong>Teléfono:</strong><br>
+    784 8940 – Línea gratuita 018000 400357
+</p>
+
+<p>
+    <strong>E-mail:</strong><br>
+    contactenos@cordoba.gov.co
+</p>
+
+<p>
+    <strong>Tipo de control:</strong><br>
+    Administrativo, regulatorio, inspección y vigilancia
+    del servicio educativo.
+</p>
+
+<p>
+    <strong>Mecanismos de supervisión y vigilancia:</strong><br>
+    La Secretaría de Educación, a través de sus funciones de
+    inspección y vigilancia, realiza seguimiento, verificación,
+    asesoría y control sobre la prestación del servicio educativo.
+</p>
+
+<p>
+    <strong>Mecanismos internos de la institución:</strong><br>
+    Rectoría o Dirección Rural, Consejo Directivo, Consejo Académico,
+    Comité Escolar de Convivencia y demás instancias establecidas
+    en el PEI y el Manual de Convivencia.
+</p>
+
+<a href="https://seducacion.cordoba.gov.co/index.php/es/"
+   target="_blank"
+   rel="noopener">
+    Visitar sitio web de la Secretaría →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏛️ Gobernación de Córdoba</h3>
+
+<p>
+    Entidad territorial departamental a la cual se encuentra vinculada
+    la gestión del sector educativo departamental.
+</p>
+
+<a href="https://www.cordoba.gov.co/"
+   target="_blank"
+   rel="noopener">
+    Visitar sitio web →
+</a>
+
+</div>
+
+</div>
 
 </section>
+
+<!-- =========================
+     GALERÍA
+========================= -->
 
 <section class="content" id="galeria">
-<div class="section-title"><span>Comunidad educativa</span><h2>Galería institucional</h2><p>Conoce algunos momentos, actividades y experiencias de nuestra comunidad educativa.</p></div>
-<div class="gallery">
-<div class="gallery-item"><img src="galeria/baile.jpeg" alt="Actividad cultural" class="gallery-image" onclick="openLightbox(this)"><div class="gallery-caption"><h3>Actividad cultural</h3><p>Institución Educativa Primavera</p></div></div>
-<div class="gallery-item"><img src="galeria/deporte.jpeg" alt="Actividades deportivas" class="gallery-image" onclick="openLightbox(this)"><div class="gallery-caption"><h3>Actividades deportivas</h3><p>Comunidad educativa</p></div></div>
-<div class="gallery-item"><img src="galeria/desfile.jpeg" alt="Desfile institucional" class="gallery-image" onclick="openLightbox(this)"><div class="gallery-caption"><h3>Desfile institucional</h3><p>Comunidad educativa</p></div></div>
-<div class="gallery-item"><img src="galeria/encuentro.jpeg" alt="Encuentro institucional" class="gallery-image" onclick="openLightbox(this)"><div class="gallery-caption"><h3>Encuentro institucional</h3><p>Institución Educativa Primavera</p></div></div>
-<div class="gallery-item"><img src="galeria/profes.jpeg" alt="Docentes de la institución" class="gallery-image" onclick="openLightbox(this)"><div class="gallery-caption"><h3>Nuestros docentes</h3><p>Institución Educativa Primavera</p></div></div>
-<div class="gallery-item"><img src="galeria/reunion.jpeg" alt="Reunión institucional" class="gallery-image" onclick="openLightbox(this)"><div class="gallery-caption"><h3>Reuniones institucionales</h3><p>Comunidad educativa</p></div></div>
+
+<div class="section-title">
+
+<span>Comunidad educativa</span>
+
+<h2>Galería institucional</h2>
+
+<p>
+    Conoce algunos momentos, actividades y experiencias
+    de nuestra comunidad educativa.
+</p>
+
 </div>
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="galeria/baile.jpeg"
+     alt="Actividad cultural"
+     class="gallery-image"
+     onclick="openLightbox(this)">
+<div class="gallery-caption">
+<h3>Actividad cultural</h3>
+<p>Institución Educativa Primavera</p>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="galeria/deporte.jpeg"
+     alt="Actividades deportivas"
+     class="gallery-image"
+     onclick="openLightbox(this)">
+<div class="gallery-caption">
+<h3>Actividades deportivas</h3>
+<p>Comunidad educativa</p>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="galeria/desfile.jpeg"
+     alt="Desfile institucional"
+     class="gallery-image"
+     onclick="openLightbox(this)">
+<div class="gallery-caption">
+<h3>Desfile institucional</h3>
+<p>Comunidad educativa</p>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="galeria/encuentro.jpeg"
+     alt="Encuentro institucional"
+     class="gallery-image"
+     onclick="openLightbox(this)">
+<div class="gallery-caption">
+<h3>Encuentro institucional</h3>
+<p>Institución Educativa Primavera</p>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="galeria/profes.jpeg"
+     alt="Docentes de la institución"
+     class="gallery-image"
+     onclick="openLightbox(this)">
+<div class="gallery-caption">
+<h3>Nuestros docentes</h3>
+<p>Institución Educativa Primavera</p>
+</div>
+</div>
+
+<div class="gallery-item">
+<img src="galeria/reunion.jpeg"
+     alt="Reunión institucional"
+     class="gallery-image"
+     onclick="openLightbox(this)">
+<div class="gallery-caption">
+<h3>Reuniones institucionales</h3>
+<p>Comunidad educativa</p>
+</div>
+</div>
+
+</div>
+
 </section>
 
+<!-- =========================
+     NOTICIAS
+========================= -->
+
 <section class="content" id="noticias">
-<div class="section-title"><span>Actualidad institucional</span><h2>Noticias y actividades</h2><p>Conoce las principales actividades, acontecimientos y experiencias de nuestra comunidad educativa.</p></div>
-<div class="cards">
-<div class="card"><h3>📚 Actividades académicas</h3><p>Espacio destinado a compartir actividades, proyectos y experiencias relacionadas con los procesos académicos.</p><p><strong>Próximamente</strong></p></div>
-<div class="card"><h3>🌱 Primavera Verde</h3><p>Actividades para promover el cuidado del ambiente, el reciclaje y la protección del entorno.</p><p><strong>Próximamente</strong></p></div>
-<div class="card"><h3>🎨 Actividades culturales</h3><p>Encuentros culturales, artísticos, literarios y otras experiencias de formación integral.</p><p><strong>Próximamente</strong></p></div>
-<div class="card"><h3>⚽ Actividades deportivas</h3><p>Encuentros, actividades deportivas y espacios para el aprovechamiento del tiempo libre.</p><p><strong>Próximamente</strong></p></div>
-<div class="card"><h3>🤝 Comunidad educativa</h3><p>Noticias y experiencias relacionadas con estudiantes, docentes, familias y demás integrantes.</p><p><strong>Próximamente</strong></p></div>
-<div class="card"><h3>🏫 Información institucional</h3><p>Comunicados y novedades de interés para estudiantes, familias, docentes y comunidad en general.</p><p><strong>Próximamente</strong></p></div>
+
+<div class="section-title">
+
+<span>Actualidad institucional</span>
+
+<h2>Noticias y actividades</h2>
+
+<p>
+    Conoce las principales actividades, acontecimientos y experiencias
+    de nuestra comunidad educativa.
+</p>
+
 </div>
+
+<div class="cards">
+
+<div class="card">
+<h3>📚 Actividades académicas</h3>
+<p>
+    Espacio destinado a compartir actividades, proyectos y experiencias
+    relacionadas con los procesos académicos.
+</p>
+<p><strong>Próximamente</strong></p>
+</div>
+
+<div class="card">
+<h3>🌱 Primavera Verde</h3>
+<p>
+    Actividades para promover el cuidado del ambiente, el reciclaje
+    y la protección del entorno.
+</p>
+<p><strong>Próximamente</strong></p>
+</div>
+
+<div class="card">
+<h3>🎨 Actividades culturales</h3>
+<p>
+    Encuentros culturales, artísticos, literarios y otras experiencias
+    de formación integral.
+</p>
+<p><strong>Próximamente</strong></p>
+</div>
+
+<div class="card">
+<h3>⚽ Actividades deportivas</h3>
+<p>
+    Encuentros, actividades deportivas y espacios para el
+    aprovechamiento del tiempo libre.
+</p>
+<p><strong>Próximamente</strong></p>
+</div>
+
+<div class="card">
+<h3>🤝 Comunidad educativa</h3>
+<p>
+    Noticias y experiencias relacionadas con estudiantes, docentes,
+    familias y demás integrantes.
+</p>
+<p><strong>Próximamente</strong></p>
+</div>
+
+<div class="card">
+<h3>🏫 Información institucional</h3>
+<p>
+    Comunicados y novedades de interés para estudiantes,
+    familias, docentes y comunidad en general.
+</p>
+<p><strong>Próximamente</strong></p>
+</div>
+
+</div>
+
 </section>
-<!-- MAPA DEL SITIO -->
+
+<!-- =========================
+     MAPA DEL SITIO
+========================= -->
+
 <section class="content" id="mapa-sitio">
 
 <div class="section-title">
+
 <span>Navegación del sitio</span>
+
 <h2>Mapa del sitio</h2>
+
 <p>
-Consulta de manera organizada las principales secciones
-del sitio web de la Institución Educativa Primavera.
+    Consulta de manera organizada las principales secciones
+    del sitio web de la Institución Educativa Primavera.
 </p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🏫 Institución</h3>
+
+<a href="#institucion">
+    Información institucional →
+</a>
+
+<a href="#mision-vision">
+    Misión y Visión →
+</a>
+
+<a href="#filosofia">
+    Filosofía, Principios y Valores →
+</a>
+
+<a href="#perfiles">
+    Perfiles institucionales →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📚 Área académica</h3>
+
+<a href="#academico">
+    Formación académica y pedagógica →
+</a>
+
+<a href="#documentos">
+    Documentos institucionales →
+</a>
+
+<a href="#galeria">
+    Galería institucional →
+</a>
+
+<a href="#noticias">
+    Noticias y actividades →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🏛️ Información pública</h3>
+
+<a href="#transparencia">
+    Transparencia y Acceso a la Información Pública →
+</a>
+
+<a href="#atencion">
+    Atención y Servicios a la Ciudadanía →
+</a>
+
+<a href="#participa">
+    Participa →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📋 Gestión y participación</h3>
+
+<a href="#transparencia">
+    PAAC 2026 →
+</a>
+
+<a href="#transparencia">
+    Rendición de Cuentas 2025 →
+</a>
+
+<a href="#transparencia">
+    Gobierno escolar y participación →
+</a>
+
+<a href="#directorio-entidades">
+    Directorio de Entidades →
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>📞 Contacto</h3>
+
+<a href="#contacto">
+    Contacto institucional →
+</a>
+
+<a href="mailto:ee_22357000093301@sedcordoba.gov.co">
+    Correo institucional →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     POLÍTICAS
+========================= -->
+
+<section class="content" id="politicas">
+
+<div class="section-title">
+
+<span>Información legal</span>
+
+<h2>Políticas y condiciones</h2>
+
+<p>
+    Información sobre las condiciones de uso, privacidad y derechos
+    relacionados con los contenidos publicados en este sitio web.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📄 Términos y condiciones</h3>
+
+<p>
+    El presente sitio web es administrado por la Institución Educativa
+    Primavera y tiene como finalidad facilitar el acceso de la comunidad
+    educativa y de la ciudadanía a información institucional, académica,
+    administrativa, normativa y de interés público.
+</p>
+
+<p>
+    El acceso y uso de este sitio implica la aceptación de las presentes
+    condiciones. La información publicada se suministra con fines
+    informativos y de orientación y se procurará mantener actualizada
+    conforme a la información oficial disponible.
+</p>
+
+<p>
+    Los enlaces hacia sitios web y sistemas externos corresponden a
+    plataformas oficiales o fuentes de información relacionadas con
+    la gestión pública. Al acceder a dichos sitios, el usuario queda
+    sujeto a las condiciones y políticas propias de cada plataforma.
+</p>
+
+<p>
+    La Institución Educativa podrá actualizar, modificar o complementar
+    los contenidos del sitio cuando sea necesario, especialmente cuando
+    se presenten cambios en la información institucional o en la
+    normativa aplicable.
+</p>
+
+<p>
+    Para solicitudes de información, inquietudes o comunicaciones
+    relacionadas con el contenido del sitio, la ciudadanía puede utilizar
+    los canales de atención institucional publicados en la sección
+    <strong>Atención y Servicios a la Ciudadanía</strong>.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔐 Política de privacidad y tratamiento de datos personales</h3>
+
+<p>
+    La Institución Educativa Primavera reconoce el derecho de las
+    personas a conocer, actualizar, rectificar y ejercer los demás
+    derechos relacionados con sus datos personales, de conformidad
+    con la normativa colombiana vigente sobre protección de datos
+    personales.
+</p>
+
+<p>
+    Los datos personales que sean tratados por la institución serán
+    utilizados para finalidades relacionadas con el cumplimiento de
+    sus funciones, la prestación del servicio educativo, la atención
+    de solicitudes y comunicaciones, y las demás finalidades que
+    correspondan de acuerdo con las obligaciones legales y
+    administrativas aplicables.
+</p>
+
+<p>
+    La institución adoptará las medidas necesarias para proteger
+    los datos personales frente a accesos, usos o tratamientos no
+    autorizados, de acuerdo con sus capacidades institucionales y
+    con la normativa vigente.
+</p>
+
+<p>
+    Los titulares de los datos personales podrán ejercer los derechos
+    reconocidos por la legislación colombiana, incluyendo conocer,
+    actualizar y rectificar sus datos, solicitar información sobre
+    su tratamiento y presentar las reclamaciones que correspondan
+    a través de los canales institucionales de atención.
+</p>
+
+<p>
+    Cuando se trate de información relacionada con niños, niñas y
+    adolescentes, su tratamiento se realizará observando las
+    disposiciones legales aplicables y procurando la protección
+    prevalente de sus derechos.
+</p>
+
+<p>
+    La presente política se aplicará de acuerdo con la Ley 1581 de 2012,
+    sus normas reglamentarias y las demás disposiciones que resulten
+    aplicables al tratamiento de datos personales.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>©️ Derechos de autor y uso de contenidos</h3>
+
+<p>
+    Los textos, documentos, fotografías, imágenes y demás contenidos
+    publicados en este sitio tienen como finalidad informar a la
+    comunidad educativa y facilitar el acceso a información
+    institucional y pública.
+</p>
+
+<p>
+    Los contenidos que sean de titularidad de la Institución Educativa
+    Primavera podrán ser consultados y utilizados con fines informativos
+    y educativos, respetando los derechos de autor y las demás
+    disposiciones legales aplicables.
+</p>
+
+<p>
+    Cuando se utilicen contenidos de terceros, se deberán respetar
+    los derechos de sus respectivos titulares y las condiciones de
+    uso que correspondan.
+</p>
+
+<p>
+    La reproducción, distribución, transformación o utilización de
+    contenidos protegidos por derechos de autor deberá realizarse
+    de conformidad con la legislación colombiana y, cuando corresponda,
+    contar con la autorización del titular de los derechos.
+</p>
+
+<p>
+    Las fotografías y contenidos relacionados con integrantes de la
+    comunidad educativa serán publicados atendiendo las autorizaciones,
+    restricciones y disposiciones aplicables, especialmente cuando
+    involucren niños, niñas o adolescentes.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
+<section class="content" id="contacto">
+
+<div class="section-title">
+
+<span>Estamos para atenderte</span>
+
+<h2>Contacto institucional</h2>
+
+<p>
+    Comunícate con la Institución Educativa Primavera para obtener
+    información sobre nuestros servicios, procesos y actividades
+    institucionales.
+</p>
+
 </div>
 
 <div class="cards">
 
 <div class="card">
 <h3>🏫 Institución</h3>
-<a href="#institucion">Información institucional →</a>
-<a href="#mision-vision">Misión y Visión →</a>
-<a href="#filosofia">Filosofía, Principios y Valores →</a>
-<a href="#perfiles">Perfiles institucionales →</a>
+<p>
+    <strong>
+        Institución Educativa Primavera
+    </strong>
+</p>
 </div>
 
 <div class="card">
-<h3>📚 Área académica</h3>
-<a href="#academico">Formación académica y pedagógica →</a>
-<a href="#documentos">Documentos institucionales →</a>
-<a href="#galeria">Galería institucional →</a>
-<a href="#noticias">Noticias y actividades →</a>
+<h3>📍 Ubicación física – Sede principal</h3>
+<p>
+    <strong>
+        Vereda Primavera, Pueblo Nuevo, Córdoba
+    </strong>
+</p>
 </div>
 
 <div class="card">
-<h3>🏛️ Información pública</h3>
-<a href="#transparencia">
-Transparencia y Acceso a la Información Pública →
+<h3>📞 Teléfono institucional</h3>
+<p>
+    <strong>
+        311 664 2533
+    </strong>
+</p>
+
+<a href="tel:+573116642533">
+    Llamar →
 </a>
-<a href="#atencion">
-Atención y Servicios a la Ciudadanía →
-</a>
-<a href="#participa">Participa →</a>
 </div>
 
 <div class="card">
-<h3>📞 Contacto</h3>
-<a href="#contacto">Contacto institucional →</a>
+<h3>✉️ Correo institucional</h3>
+<p>
+    <strong>
+        ee_22357000093301@sedcordoba.gov.co
+    </strong>
+</p>
+
 <a href="mailto:ee_22357000093301@sedcordoba.gov.co">
-Correo institucional →
+    Enviar correo →
 </a>
 </div>
 
-</div>
-</section>
-<!-- POLÍTICAS Y CONDICIONES -->
-<section class="content" id="politicas">
-
-<div class="section-title">
-<span>Información legal</span>
-<h2>Políticas y condiciones</h2>
-<p>
-Información sobre las condiciones de uso, privacidad y derechos
-relacionados con los contenidos publicados en este sitio web.
-</p>
-</div>
-
-<div class="cards">
-
 <div class="card">
-<h3>📄 Términos y condiciones</h3>
-
+<h3>🕐 Horario de atención</h3>
 <p>
-El presente sitio web es administrado por la Institución Educativa
-Primavera y tiene como finalidad facilitar el acceso de la comunidad
-educativa y de la ciudadanía a información institucional, académica,
-administrativa, normativa y de interés público.
-</p>
-
-<p>
-El acceso y uso de este sitio implica la aceptación de las presentes
-condiciones. La información publicada se suministra con fines
-informativos y de orientación y se procurará mantener actualizada
-conforme a la información oficial disponible.
-</p>
-
-<p>
-Los enlaces hacia sitios web y sistemas externos corresponden a
-plataformas oficiales o fuentes de información relacionadas con la
-gestión pública. Al acceder a dichos sitios, el usuario queda sujeto
-a las condiciones y políticas propias de cada plataforma.
-</p>
-
-<p>
-La Institución Educativa podrá actualizar, modificar o complementar
-los contenidos del sitio cuando sea necesario, especialmente cuando
-se presenten cambios en la información institucional o en la
-normativa aplicable.
-</p>
-
-<p>
-Para solicitudes de información, inquietudes o comunicaciones
-relacionadas con el contenido del sitio, la ciudadanía puede utilizar
-los canales de atención institucional publicados en la sección
-<strong>Atención y Servicios a la Ciudadanía</strong>.
+    <strong>
+        Lunes a viernes<br>
+        7:00 a. m. – 2:30 p. m.
+    </strong>
 </p>
 </div>
 
-<div class="card">
-<h3>🔐 Política de privacidad y tratamiento de datos personales</h3>
-
-<p>
-La Institución Educativa Primavera reconoce el derecho de las
-personas a conocer, actualizar, rectificar y ejercer los demás
-derechos relacionados con sus datos personales, de conformidad con
-la normativa colombiana vigente sobre protección de datos personales.
-</p>
-
-<p>
-Los datos personales que sean tratados por la institución serán
-utilizados para finalidades relacionadas con el cumplimiento de sus
-funciones, la prestación del servicio educativo, la atención de
-solicitudes y comunicaciones, y las demás finalidades que correspondan
-de acuerdo con las obligaciones legales y administrativas aplicables.
-</p>
-
-<p>
-La institución adoptará las medidas necesarias para proteger los
-datos personales frente a accesos, usos o tratamientos no autorizados,
-de acuerdo con sus capacidades institucionales y con la normativa
-vigente.
-</p>
-
-<p>
-Los titulares de los datos personales podrán ejercer los derechos
-reconocidos por la legislación colombiana, incluyendo conocer,
-actualizar y rectificar sus datos, solicitar información sobre su
-tratamiento y presentar las reclamaciones que correspondan a través
-de los canales institucionales de atención.
-</p>
-
-<p>
-Cuando se trate de información relacionada con niños, niñas y
-adolescentes, su tratamiento se realizará observando las disposiciones
-legales aplicables y procurando la protección prevalente de sus
-derechos.
-</p>
-
-<p>
-La presente política se aplicará de acuerdo con la Ley 1581 de 2012,
-sus normas reglamentarias y las demás disposiciones que resulten
-aplicables al tratamiento de datos personales.
-</p>
-</div>
-
-<div class="card">
-<h3>©️ Derechos de autor y uso de contenidos</h3>
-
-<p>
-Los textos, documentos, fotografías, imágenes y demás contenidos
-publicados en este sitio tienen como finalidad informar a la
-comunidad educativa y facilitar el acceso a información institucional
-y pública.
-</p>
-
-<p>
-Los contenidos que sean de titularidad de la Institución Educativa
-Primavera podrán ser consultados y utilizados con fines informativos
-y educativos, respetando los derechos de autor y las demás
-disposiciones legales aplicables.
-</p>
-
-<p>
-Cuando se utilicen contenidos de terceros, se deberán respetar los
-derechos de sus respectivos titulares y las condiciones de uso que
-correspondan.
-</p>
-
-<p>
-La reproducción, distribución, transformación o utilización de
-contenidos protegidos por derechos de autor deberá realizarse de
-conformidad con la legislación colombiana y, cuando corresponda,
-contar con la autorización del titular de los derechos.
-</p>
-
-<p>
-Las fotografías y contenidos relacionados con integrantes de la
-comunidad educativa serán publicados atendiendo las autorizaciones,
-restricciones y disposiciones aplicables, especialmente cuando
-involucren niños, niñas o adolescentes.
-</p>
-
-<p>
-La utilización de información pública disponible en este sitio no
-implica transferencia de derechos de propiedad intelectual sobre los
-contenidos protegidos.
-</p>
 </div>
 
 </section>
 
-<section class="content" id="contacto">
-<div class="section-title"><span>Estamos para atenderte</span><h2>Contacto institucional</h2><p>Comunícate con la Institución Educativa Primavera para obtener información sobre nuestros servicios, procesos y actividades institucionales.</p></div>
-<div class="cards">
-<div class="card"><h3>🏫 Institución</h3><p><strong>Institución Educativa Primavera</strong></p></div>
-<div class="card"><h3>📍 Ubicación física – Sede principal</h3><p><strong>Vereda Primavera, Pueblo Nuevo, Córdoba</strong></p></div>
-<div class="card"><h3>📞 Teléfono institucional</h3><p><strong>311 664 2533</strong></p></div>
-<div class="card"><h3>✉️ Correo institucional</h3><p><strong>ee_22357000093301@sedcordoba.gov.co</strong></p></div>
-<div class="card"><h3>🕐 Horario de atención</h3><p><strong>Lunes a viernes<br>7:00 a. m. – 2:30 p. m.</strong></p></div>
-</div>
-</section>
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
 <div class="footer-grid">
 
-    <div>
-        <h3>Institución Educativa Primavera</h3>
-        <p>
-            Portal web institucional de la comunidad educativa
-            de Pueblo Nuevo, Córdoba.
-        </p>
+<div>
 
-        <p style="margin-top:15px;">
-            <a href="https://www.facebook.com/share/19DsFVtka2/?mibextid=wwXIfr"
-               target="_blank"
-               rel="noopener"
-               aria-label="Facebook de la Institución Educativa Primavera">
-                Facebook institucional
-            </a>
-        </p>
-    </div>
+<h3>
+    Institución Educativa Primavera
+</h3>
 
+<p>
+    Portal web institucional de la comunidad educativa
+    de Pueblo Nuevo, Córdoba.
+</p>
 
-    <div>
-        <h3>Enlaces institucionales</h3>
+<p style="margin-top:15px;">
 
-        <a href="index.html">Inicio</a>
-        <a href="#institucion">Institución</a>
-        <a href="#documentos">Documentos</a>
-        <a href="#transparencia">
-            Transparencia y Acceso a la Información Pública
-        </a>
-        <a href="#atencion">
-            Atención y Servicios a la Ciudadanía
-        </a>
-        <a href="#participa">Participa</a>
-        <a href="#galeria">Galería</a>
-        <a href="#noticias">Noticias</a>
-        <a href="#contacto">Contacto</a>
-    </div>
+<a href="https://www.facebook.com/share/19DsFVtka2/?mibextid=wwXIfr"
+   target="_blank"
+   rel="noopener"
+   aria-label="Facebook de la Institución Educativa Primavera">
 
+    Facebook institucional
 
-    <div>
-        <h3>Contacto</h3>
+</a>
 
-        <p>📞 311 664 2533</p>
-
-        <p>
-            ✉️
-            <a href="mailto:ee_22357000093301@sedcordoba.gov.co">
-                ee_22357000093301@sedcordoba.gov.co
-            </a>
-        </p>
-
-        <p>📍 Vereda Primavera, Pueblo Nuevo, Córdoba</p>
-
-        <p>
-            🕐 Lunes a viernes<br>
-            7:00 a. m. – 2:30 p. m.
-        </p>
-    </div>
+</p>
 
 </div>
 
+<div>
+
+<h3>
+    Enlaces institucionales
+</h3>
+
+<a href="index.html">
+    Inicio
+</a>
+
+<a href="#institucion">
+    Institución
+</a>
+
+<a href="#documentos">
+    Documentos
+</a>
+
+<a href="#transparencia">
+    Transparencia
+</a>
+
+<a href="#atencion">
+    Atención y Servicios
+</a>
+
+<a href="#participa">
+    Participa
+</a>
+
+<a href="#galeria">
+    Galería
+</a>
+
+<a href="#noticias">
+    Noticias
+</a>
+
+<a href="#contacto">
+    Contacto
+</a>
+
+</div>
+
+<div>
+
+<h3>
+    Contacto
+</h3>
+
+<p>
+    📞 311 664 2533
+</p>
+
+<p>
+    ✉️
+    <a href="mailto:ee_22357000093301@sedcordoba.gov.co">
+        ee_22357000093301@sedcordoba.gov.co
+    </a>
+</p>
+
+<p>
+    📍 Vereda Primavera, Pueblo Nuevo, Córdoba
+</p>
+
+<p>
+    🕐 Lunes a viernes<br>
+    7:00 a. m. – 2:30 p. m.
+</p>
+
+</div>
+
+</div>
 
 <div class="copyright">
 
-    <p>
-        © 2026 Institución Educativa Primavera · Pueblo Nuevo, Córdoba
-    </p>
+<p>
+    © 2026 Institución Educativa Primavera · Pueblo Nuevo, Córdoba
+</p>
 
-    <p style="margin-top:10px;">
+<p style="margin-top:10px;">
 
-        <a href="#mapa-sitio">
-            Mapa del sitio
-        </a>
+<a href="#mapa-sitio">
+    Mapa del sitio
+</a>
 
-        <span style="margin:0 8px;">|</span>
+<span style="margin:0 8px;">|</span>
 
-        <a href="#politicas">
-            Políticas y condiciones
-        </a>
+<a href="#politicas">
+    Políticas y condiciones
+</a>
 
-    </p>
+</p>
 
 </div>
 
 </footer>
 
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-<span class="lightbox-close">&times;</span>
-<img id="lightbox-image" src="" alt="Fotografía ampliada">
+<!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div id="lightbox"
+     class="lightbox"
+     onclick="closeLightbox()">
+
+<span class="lightbox-close">
+    &times;
+</span>
+
+<img id="lightbox-image"
+     src=""
+     alt="Fotografía ampliada">
+
 </div>
 
 <script>
+
 function openLightbox(image){
-const lightbox=document.getElementById("lightbox");
-const lightboxImage=document.getElementById("lightbox-image");
-lightboxImage.src=image.src;
-lightboxImage.alt=image.alt;
-lightbox.classList.add("active");
+
+    const lightbox =
+        document.getElementById("lightbox");
+
+    const lightboxImage =
+        document.getElementById("lightbox-image");
+
+    lightboxImage.src = image.src;
+
+    lightboxImage.alt = image.alt;
+
+    lightbox.classList.add("active");
 }
+
 function closeLightbox(){
-document.getElementById("lightbox").classList.remove("active");
+
+    document
+        .getElementById("lightbox")
+        .classList.remove("active");
 }
+
+document.addEventListener("keydown", function(event){
+
+    if(event.key === "Escape"){
+        closeLightbox();
+    }
+
+});
+
 </script>
+
 </body>
 </html>
